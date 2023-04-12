@@ -1,0 +1,107 @@
+@import 'mixin.scss';
+@import './_variable__.scss';
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: $font-family;
+    scroll-behavior: smooth;
+
+    @include responsive(nest-hub) {
+        font-size: 56.25%;
+    }
+
+    @include responsive(ipad) {
+        font-size: 56.25%;
+    }
+    
+    @include responsive(phone) {
+        font-size: 50%;
+    }
+
+}
+
+body {
+	line-height: 1;
+    background-color: $body-color;
+    width: 100vw;
+}
+
+.app-container {
+    width: 100vw;
+    min-height: 100vh;
+    // @include boxCenter();
+}
+
+.mt-40 {
+    margin-top: 4rem;
+}
+
+
+.mt-30 {
+    margin-top: 3rem;
+}
+
+.mt-20 {
+    margin-top: 2rem;
+}
+
+
+.mt-10 {
+    margin-top: 1rem;
+}
+
+.ml-40 {
+    margin-left: 4rem;
+}
+
+
+.ml-30 {
+    margin-left: 3rem;
+}
+
+.ml-20 {
+    margin-left: 2rem;
+}
+
+
+.ml-10 {
+    margin-left: 1rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.relative {
+    position: relative;
+}
+
+.error-message {
+    color: #ff0000 !important;
+    font-size: 1.4rem;
+}
+
+.invalid {
+    input {
+        border-color: rgb(240, 121, 121) !important;
+    }
+}
+
+
+.hover {
+    &:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+}
