@@ -28,7 +28,7 @@ body {
     width: 100vw;
 }
 
-.app-wrapper {
+.app-container {
     width: 100vw;
     min-height: 100vh;
     // @include boxCenter();
@@ -52,8 +52,22 @@ body {
     margin-top: 1rem;
 }
 
-.mt-8 {
-    margin-top: 0.8rem;
+.ml-40 {
+    margin-left: 4rem;
+}
+
+
+.ml-30 {
+    margin-left: 3rem;
+}
+
+.ml-20 {
+    margin-left: 2rem;
+}
+
+
+.ml-10 {
+    margin-left: 1rem;
 }
 
 .w-100 {
