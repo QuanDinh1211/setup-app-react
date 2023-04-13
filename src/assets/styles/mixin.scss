@@ -1,0 +1,50 @@
+@mixin pd($pd_value: 3%) {
+    padding: 6rem 0;
+    padding-left: $pd_value;
+    padding-right: $pd_value;
+}
+
+
+@mixin boxCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+
+@mixin responsive ($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 600px) {
+            @content
+        };
+    }
+
+    @if $breakpoint == phone-max {
+        @media (min-width: 500px) and (max-width: 600px) {
+            @content
+        };
+    }
+
+    @if $breakpoint == ipad {
+        @media (min-width: 600px) and (max-width: 900px) {
+            @content
+        };
+    }
+
+    @if $breakpoint == ipad-min {
+        @media (min-width: 600px) and (max-width: 750px) {
+            @content
+        };
+    }
+
+    @if $breakpoint == nest-hub {
+        @media (min-width: 900px) and (max-width: 1200px) {
+            @content
+        };
+    }
+    @if $breakpoint == nest-hub-max { 
+        @media (min-width: 1200px) and (max-width: 1300px) {
+            @content
+        };
+    }
+}
